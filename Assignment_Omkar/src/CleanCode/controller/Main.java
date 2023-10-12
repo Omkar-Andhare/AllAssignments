@@ -16,9 +16,9 @@ import CleanCode.serviceimpl.PalindromeImpl;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
-public class MainNumberOperations {
+public class Main {
 
-    private static final Logger LOGGER = Logger.getLogger(MainNumberOperations.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
 
     public static void main(String[] args) {
 
