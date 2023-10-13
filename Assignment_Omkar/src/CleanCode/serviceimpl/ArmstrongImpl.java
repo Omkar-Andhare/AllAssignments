@@ -1,10 +1,10 @@
 package CleanCode.serviceimpl;
 
-import CleanCode.service.IArmstrong;
+import CleanCode.service.IOperationOnNumbers;
 
-public class ArmstrongImpl implements IArmstrong {
+public class ArmstrongImpl implements IOperationOnNumbers {
     @Override
-    public void isArmstrongNumber(int n) {
+    public void performCheck(int n) {
         int sum = 0;
         int temp = n;
         int noOfDigit = String.valueOf(n).length();

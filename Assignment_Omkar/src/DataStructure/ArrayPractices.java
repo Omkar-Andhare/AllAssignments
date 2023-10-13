@@ -7,7 +7,10 @@ public class ArrayPractices {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-  /*      System.out.println("size :- ");
+/*
+        // Task 1
+
+        System.out.println("size :- ");
         int size = sc.nextInt();
         int[] arr = new int[size];
 
@@ -26,21 +29,22 @@ public class ArrayPractices {
         System.out.println("---------------------------------------------------------");
 
 
+        // Task 2
+
         String[] str = new String[3];
         System.out.println("enter the strings");//accepting string array
         for (int i = 0; i < str.length; i++) {
             str[i] = sc.next();
         }
-        System.out.println("---------------------------");
         for (int i = 0; i < str.length; i++) {//printing string array
             System.out.println(str[i]);
         }
-        System.out.println("---------------------------------");
         for (int i = str.length - 1; i >= 0; i--) {//reversing string array
             System.out.println(str[i]);
         }
-         */
+        System.out.println("---------------------------------------------------------");
 
+        //Task 3
         int[] arr1 = {2, 3, 4, 1, 2};
         int[] arrCopy = new int[arr1.length];
 
@@ -49,8 +53,9 @@ public class ArrayPractices {
         }
         for (int i = 0; i < arr1.length; i++) {//copying array from another array
             System.out.println(arrCopy[i]);
-            ;
         }
+ */
+
 
 
     }

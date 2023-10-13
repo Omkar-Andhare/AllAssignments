@@ -1,10 +1,10 @@
 package CleanCode.serviceimpl;
 
-import CleanCode.service.IEvenOdd;
+import CleanCode.service.IOperationOnNumbers;
 
-public class EvenOddImpl implements IEvenOdd {
+public class EvenOddImpl implements IOperationOnNumbers {
     @Override
-    public void isEvenOrOddNumber(int n) {
+    public void performCheck(int n) {
         if (n % 2 == 0) {
             System.out.println(n + ": is Even Number");
         } else {

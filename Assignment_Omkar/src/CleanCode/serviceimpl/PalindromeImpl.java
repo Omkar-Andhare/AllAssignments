@@ -1,10 +1,10 @@
 package CleanCode.serviceimpl;
 
-import CleanCode.service.IPalindrome;
+import CleanCode.service.IOperationOnNumbers;
 
-public class PalindromeImpl implements IPalindrome {
+public class PalindromeImpl implements IOperationOnNumbers {
     @Override
-    public void isPalindromeNumber(int n) {
+    public void performCheck(int n) {
         int remainder, sum = 0;
         int temp = n;
         while (n > 0) {

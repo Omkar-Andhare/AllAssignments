@@ -9,6 +9,7 @@ package CleanCode.controller;
 //2. while() is used for viewing options repeatedly and selection
 //3. after selection of option switch case is used
 
+import CleanCode.service.IOperationOnNumbers;
 import CleanCode.serviceimpl.ArmstrongImpl;
 import CleanCode.serviceimpl.EvenOddImpl;
 import CleanCode.serviceimpl.PalindromeImpl;
@@ -23,9 +24,9 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        ArmstrongImpl armstrong = new ArmstrongImpl();
-        PalindromeImpl palindrome = new PalindromeImpl();
-        EvenOddImpl evenOdd = new EvenOddImpl();
+        IOperationOnNumbers armstrong = new ArmstrongImpl();
+        IOperationOnNumbers palindrome = new PalindromeImpl();
+        IOperationOnNumbers evenOdd = new EvenOddImpl();
         int choice;
         int number;
 
@@ -51,17 +52,17 @@ public class Main {
 
             switch (choice) {
                 case 1: {
-                    armstrong.isArmstrongNumber(number);
+                    armstrong.performCheck(number);
                     LOGGER.info("-----Choice number " + choice + " operation performed successfully-----");
                     break;
                 }
                 case 2: {
-                    evenOdd.isEvenOrOddNumber(number);
+                    evenOdd.performCheck(number);
                     LOGGER.info("-----Choice number " + choice + " operation performed successfully-----");
                     break;
                 }
                 case 3: {
-                    palindrome.isPalindromeNumber(number);
+                    palindrome.performCheck(number);
                     LOGGER.info("-----Choice number " + choice + " operation performed successfully-----");
                     break;
                 }
