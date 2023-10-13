@@ -1,0 +1,53 @@
+Q1.  void foo(int n) {                                 
+        for (int i = 0; i < n; i++) {                  //n
+            for (int j = 0; j < n; j++) {              //n*n
+                System.out.println("hello");
+            }
+							=n^2+n
+        }
+    }
+    
+    
+    =>  Time Complexity: O(n^2)
+        Space Complexity: O(1)
+        
+
+
+
+
+        
+Q2.   int bar(int n) {                        
+        if (n <= 0)                           //n 
+            return 0;
+        else
+            return 1 + bar(n - 1);            //n
+    }
+    						=2n
+    
+    =>  Time Complexity: O(n)
+        Space Complexity: O(1)
+        
+
+
+Q3.  void baz(int n) {
+        for (int i = 0; i < n; i++) {              //n
+            System.out.println("hi");
+        }
+        for (int j = 0; j < n; j++) {              //n
+            System.out.println("hi");
+        }
+						=2n
+    }
+
+ 	=>  Time Complexity: O(n)
+            Space Complexity: O(1)        
+
+Q4. 
+    
+   
+   
+Q5.
+	    Time Complexity: O(n)
+            Space Complexity: O(1)        
+
+
