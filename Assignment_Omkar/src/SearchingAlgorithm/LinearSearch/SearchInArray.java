@@ -20,6 +20,7 @@ public class SearchInArray {
         for (int i = 0; i < arr.length; i++) {
             if (ele == arr[i]) {
                 System.out.println("Element found at " + i + "th index");
+                break;
             }
         }
     }

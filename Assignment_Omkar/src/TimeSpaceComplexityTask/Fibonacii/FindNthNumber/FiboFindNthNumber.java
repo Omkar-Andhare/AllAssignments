@@ -1,8 +1,8 @@
-package Fiboo;
+package TimeSpaceComplexityTask.Fibonacii.FindNthNumber;
 
 import java.util.Scanner;
 
-public class FiboUsingArray {
+public class FiboFindNthNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int previous = 0;
