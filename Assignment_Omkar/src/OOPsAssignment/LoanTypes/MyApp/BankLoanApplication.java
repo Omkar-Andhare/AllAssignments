@@ -1,13 +1,19 @@
-package OOPsAssignment.Q1LoanTypes.MyApp;
+package OOPsAssignment.LoanTypes.MyApp;
 
-import OOPsAssignment.Q1LoanTypes.service.ILoanOperations;
-import OOPsAssignment.Q1LoanTypes.serviceImpl.CarLoan;
-import OOPsAssignment.Q1LoanTypes.serviceImpl.HomeLoan;
-import OOPsAssignment.Q1LoanTypes.serviceImpl.PersonalLoan;
+import OOPsAssignment.LoanTypes.service.ILoanOperations;
+import OOPsAssignment.LoanTypes.serviceImpl.CarLoan;
+import OOPsAssignment.LoanTypes.serviceImpl.HomeLoan;
+import OOPsAssignment.LoanTypes.serviceImpl.PersonalLoan;
 
 import java.util.Scanner;
 
+
 public class BankLoanApplication {
+
+    /*
+    viewing options of types of loan for selection
+    and as per choice operation perform by using switch case
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Available Types Of Loan:- ");

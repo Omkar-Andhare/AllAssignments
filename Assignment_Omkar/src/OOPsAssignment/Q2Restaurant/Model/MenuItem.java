@@ -1,6 +1,6 @@
-package OOPsAssignment.Q2Restaurant;
+package OOPsAssignment.Q2Restaurant.Model;
 
-class MenuItem {
+public class MenuItem {
     private String name;
     private double price;
     private int rating;

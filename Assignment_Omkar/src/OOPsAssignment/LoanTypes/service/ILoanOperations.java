@@ -1,4 +1,4 @@
-package OOPsAssignment.Q1LoanTypes.service;
+package OOPsAssignment.LoanTypes.service;
 
 public interface ILoanOperations {
     double calculateTotalPayable(double principle,int months);

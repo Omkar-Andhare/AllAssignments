@@ -1,4 +1,6 @@
-package OOPsAssignment.Q2Restaurant;
+package OOPsAssignment.Q2Restaurant.Controller;
+
+import OOPsAssignment.Q2Restaurant.serviceImpl.Restaurant;
 
 import java.util.Scanner;
 
@@ -14,7 +16,7 @@ public class RestaurantApp {
             System.out.println("3. display menu");
             System.out.println("4. Exit");
 
-            System.out.println("-------------------ENter the choice----------------");
+            System.out.println("-------------------Enter the choice----------------");
             int choice = scanner.nextInt();
 
             switch (choice) {
@@ -38,32 +40,13 @@ public class RestaurantApp {
                 }
                 case 4: {
                     flag = false;
-                    System.out.println("-----------exited successfully------------");
+                    System.out.println("-----------Exited successfully Visit Again-----------");
                     break;
                 }
                 default: {
                     System.out.println("Invalid Input");
                 }
-
             }
         }
-
-
-//        restaurant.addItem("Burger", 5.99, 4);
-//        restaurant.addItem("Pizza", 8.99, 5);
-//        restaurant.addItem("Pasta", 7.49, 3);
-//
-//        for (MenuItem item : restaurant.displayMenu()) {
-//            System.out.println(item);
-//        }
-//        restaurant.removeItem("Pizza");
-//
-//        System.out.println("Menu Items:");
-//        for (MenuItem item : restaurant.displayMenu()) {
-//            System.out.println(item);
-//        }
-//
-//        double averageRating = restaurant.calculateAverageRating();
-//        System.out.println("Average Rating: " + averageRating);
     }
 }

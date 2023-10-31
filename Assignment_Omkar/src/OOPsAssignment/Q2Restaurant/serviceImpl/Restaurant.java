@@ -1,16 +1,32 @@
-package OOPsAssignment.Q2Restaurant;
+package OOPsAssignment.Q2Restaurant.serviceImpl;
+
+import OOPsAssignment.Q2Restaurant.Model.MenuItem;
+import OOPsAssignment.Q2Restaurant.service.IRestaurantOperation;
 
 import java.util.ArrayList;
 import java.util.List;
 
-class Restaurant {
+public class Restaurant implements IRestaurantOperation {
     public List<MenuItem> menu = new ArrayList<>();
 
+
+    /**
+     * adding items in restaurant
+     *
+     * @param name
+     * @param price
+     * @param rating
+     */
     public void addItem(String name, double price, int rating) {
         MenuItem item = new MenuItem(name, price, rating);
         menu.add(item);
     }
 
+    /**
+     * removing item by entering name of that element
+     *
+     * @param name
+     */
     public void removeItem(String name) {
         MenuItem itemToRemove = null;
         for (MenuItem item : menu) {
@@ -27,6 +43,11 @@ class Restaurant {
         }
     }
 
+    /**
+     * calculating Average of all ratings
+     *
+     * @return
+     */
     public double calculateAverageRating() {
         if (menu.isEmpty()) {
             return 0.0; // No items in the menu
@@ -46,9 +67,14 @@ class Restaurant {
             return 0.0; // No items with ratings
         }
 
-        return (double) totalRating / totalItemsWithRating;
+        return totalRating / totalItemsWithRating;
     }
 
+    /**
+     * returning the all existing items
+     *
+     * @return
+     */
     public List<MenuItem> displayMenu() {
         return menu;
     }
