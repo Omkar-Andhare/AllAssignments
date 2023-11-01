@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class StringPractice {
 
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.nextLine();
-        System.out.println(s);
+        Scanner sc = new Scanner(System.in);
+//        String s=sc.nextLine();
+//        System.out.println(s);
         String str = "Hello, Perennial!";
 
         // Length of the string
@@ -58,6 +58,22 @@ public class StringPractice {
         String trimmedStr = stringWithSpaces.trim();
         System.out.println("Original: '" + stringWithSpaces + "'");
         System.out.println("Trimmed: '" + trimmedStr + "'");
+
+        //multiline string
+        // String multiLineString = "This is a multiline \n" +
+//                "string in Java using \n" +
+//                "string concatenation.";
+
+        String s1;
+        sc.useDelimiter("\\t");
+        System.out.println("Enter the multi line string(for finish the output" +
+                " enter the tab button and again press enter button) : ");
+        while (true) {
+            s1 = sc.next();
+            break;
+        }
+        System.out.println(s1);
+
     }
 }
 
