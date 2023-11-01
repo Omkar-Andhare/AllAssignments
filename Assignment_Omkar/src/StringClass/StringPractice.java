@@ -1,8 +1,13 @@
 package StringClass;
 
+import java.util.Scanner;
+
 public class StringPractice {
 
     public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        System.out.println(s);
         String str = "Hello, Perennial!";
 
         // Length of the string
