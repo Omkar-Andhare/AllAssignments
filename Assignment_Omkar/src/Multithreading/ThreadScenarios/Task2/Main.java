@@ -1,19 +1,27 @@
-package Multithreading.TaskBySonalMam.Task3;
+package Multithreading.ThreadScenarios.Task2;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 class ThreadA implements Runnable {
+     AtomicInteger i=new AtomicInteger(0);
 
+    public static  AtomicInteger m1(AtomicInteger i) {
+        i.getAndIncrement();
+        return i;
+
+    }
 
     @Override
-    public synchronized void run() {
-        int i = 0;
-        i++;
-        System.out.println(i);
+    public void run() {
+        System.out.println(m1(i));
     }
+
 }
 
 
 public class Main {
     public static void main(String[] args) {
+
 
         ThreadA a = new ThreadA();
         Thread t1 = new Thread(a);
@@ -27,3 +35,4 @@ public class Main {
     }
 
 }
+

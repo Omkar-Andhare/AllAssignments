@@ -1,22 +1,23 @@
-package Multithreading.TaskBySonalMam.Task4;
+package Multithreading.ThreadScenarios.Task5;
 
 class ThreadA implements Runnable {
     int i = 0;
-    Test test = new Test();
-
+    int sum = 0;
 
     @Override
     public void run() {
-        synchronized (test) {
-            i++;
-            System.out.println(i);
-            test.m1();
+        i++;
+        synchronized (this) {
+            sum = 10 + i;
+            System.out.println(sum);
         }
     }
 }
 
+
 public class Main {
     public static void main(String[] args) {
+
         ThreadA a = new ThreadA();
         Thread t1 = new Thread(a);
         Thread t2 = new Thread(a);

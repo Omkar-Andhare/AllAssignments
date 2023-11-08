@@ -1,4 +1,4 @@
-package Multithreading.TaskBySonalMam.Task4;
+package Multithreading.ThreadScenarios.Task4;
 
 public class Test {
     public void m1() {

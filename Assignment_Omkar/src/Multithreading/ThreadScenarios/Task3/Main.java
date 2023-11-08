@@ -1,12 +1,11 @@
-package Multithreading.TaskBySonalMam.Task1;
-
+package Multithreading.ThreadScenarios.Task3;
 
 class ThreadA implements Runnable {
-    int i = 0;
-    int a;
+
 
     @Override
-    public void run() {
+    public synchronized void run() {
+        int i = 0;
         i++;
         System.out.println(i);
     }

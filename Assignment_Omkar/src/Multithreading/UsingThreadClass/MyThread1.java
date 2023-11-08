@@ -5,7 +5,7 @@ public class MyThread1 extends Thread {
 
     @Override
     public void run() {
-        while (i < 1000) {
+        while (i < 10) {
             try {
                 sleep(500);
             } catch (InterruptedException e) {
