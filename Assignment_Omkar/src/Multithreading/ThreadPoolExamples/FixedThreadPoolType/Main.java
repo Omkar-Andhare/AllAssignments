@@ -22,7 +22,9 @@ public class Main {
             executorService.scheduleAtFixedRate(new Task2(), 1, 3, TimeUnit.SECONDS);
         }
         //initiate shutdown
-//        executorService.shutdown();
+        executorService.shutdown();
+//        executorService.execute(new Task2()); // it will throw RejectedExecutionException
+
 
         //will true if shutdown has begun
       //  System.out.println(executorService.isShutdown());

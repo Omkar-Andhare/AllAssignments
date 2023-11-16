@@ -10,7 +10,11 @@ public class Main {
         ExecutorService executorService = Executors.newFixedThreadPool(5);
 
         Future<Integer> future = executorService.submit(new Task());
+        // System.out.println(future.isDone());
+
         // System.out.println(future);
+        //  System.out.println(future.isCancelled());
+        //       future.cancel(true);
         Integer result = future.get();
         System.out.println(result);
         executorService.shutdown();
