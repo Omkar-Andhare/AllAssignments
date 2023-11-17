@@ -1,7 +1,5 @@
 package GenericPractice.TypeParameter.ClassDeclaration;
 
-import GenericPractice.TypeParameter.ClassDeclaration.Cupboard;
-
 public class Main {
     public static void main(String[] args) {
         // Creating a Cupboard with Integer content
@@ -13,6 +11,8 @@ public class Main {
         // Displaying contents of the boxes
         intCupboard.displayCupboardContents();
         stringCupboard.displayCupboardContents();
+
+        System.out.println("---------after updating----------");
 
         // Changing contents of the boxes
         intCupboard.setContent(200);
