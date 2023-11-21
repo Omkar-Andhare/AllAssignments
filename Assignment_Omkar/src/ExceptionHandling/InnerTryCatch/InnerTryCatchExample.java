@@ -1,5 +1,6 @@
 package ExceptionHandling.InnerTryCatch;
 
+//Exception propogation
 public class InnerTryCatchExample {
     public static void main(String[] args) {
         try {
