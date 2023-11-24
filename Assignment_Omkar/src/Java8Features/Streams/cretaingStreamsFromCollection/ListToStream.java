@@ -12,18 +12,21 @@ public class ListToStream {
                 "Dhanashree", "Shivani", "Rutika", "Shreyas", "Satish");
 
 
-
         //creating stream of List and performing filter operation
-        Stream<String> list = myList.stream();
-        list.filter(f -> f.startsWith("S")).forEach(e -> System.out.println(e));
-        list.sorted().forEach(l-> System.out.println("sorted list is : "+l));
+
+        myList.stream()
+                .filter(f -> f.startsWith("S"))
+                .sorted()
+                .forEach(e -> System.out.println(e));
 
 
         //creating set and add element from above list and making converting into stream
         Set<String> set = new HashSet<>();
         set.addAll(myList);
-        Stream<String> setStream = set.stream();
-        Set<String> newSet = setStream.filter(s -> s == "Omkar").collect(Collectors.toSet());
+
+        Set<String> newSet =  set.stream()
+                .filter(s -> s == "Omkar")
+                .collect(Collectors.toSet());
         System.out.println(newSet);
 
         //map to stream
